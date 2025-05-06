@@ -741,7 +741,7 @@ int check_namespace_virt(void);
 int check_kernel_procs(void);
 void run_no_sandbox(int argc, char **argv) __attribute__((noreturn));
 
-#define MAX_ENVS 256			// some sane maximum number of environment variables
+#define MAX_ENVS 512			// some sane maximum number of environment variables
 #define MAX_ENV_LEN (PATH_MAX + 32)	// FOOBAR=SOME_PATH, only applied to Firejail's own sandboxed apps
 // env.c
 typedef enum {
